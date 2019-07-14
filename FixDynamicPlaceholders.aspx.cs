@@ -101,7 +101,7 @@ namespace Sitecore.Web.sitecore.admin
                         if (!string.IsNullOrWhiteSpace(rendering.Placeholder))
                         {
                             var newPlaceholder = rendering.Placeholder;
-                            string placeHolderRegex = "([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$";
+                            string placeHolderRegex = "([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})";
                             foreach (Match match in Regex.Matches(newPlaceholder, placeHolderRegex, RegexOptions.IgnoreCase))
                             {
                                 var renderingId = match.Value;
